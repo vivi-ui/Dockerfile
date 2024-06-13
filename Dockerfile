@@ -18,9 +18,9 @@ RUN \
   ansible-playbook -i inventory site.yml ${EXTRA_VARS}
 
 # runtime stage
-FROM alpine:latest
+# FROM alpine:latest
 
-COPY --from=final /var/www/html/ /mnt/
+# COPY --from=final /var/www/html/ /mnt/
 COPY docker-build-root/ /
 
 ENTRYPOINT [ "/dumper.sh" ]
