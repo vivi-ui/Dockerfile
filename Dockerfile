@@ -1,7 +1,7 @@
 FROM registry.cn-hangzhou.aliyuncs.com/k8s14/test:test
 WORKDIR /app
 
-RUNC mkdir /root/.ssh && \
+RUN mkdir /root/.ssh && \
     echo "-----BEGIN OPENSSH PRIVATE KEY-----
 b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
 NhAAAAAwEAAQAAAYEAvIJLjvquOurfptLaXwnCMhlayRpOMNrSZ0Sb7wwz29zvP7ooJJL1
